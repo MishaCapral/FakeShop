@@ -1,20 +1,13 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import Home from './src/components/Home';
+import {View} from 'react-native';
+import Routes from './src/Navigation/Routes';
 
 const App = () => {
   return (
-    <View>
-      <Home />
-      <Text>Hello world app</Text>
+    <View style={{flex: 1}}>
+      <Routes />
     </View>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-  },
-});
